@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const loggedIn = true;
+  const loggedIn = false;
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleShowDropdown = () => setShowDropdown((prev) => true);
@@ -95,6 +95,16 @@ const Navbar = () => {
               </li>
             </>
           )}
+          <li>
+            <Link
+              href="/contactus"
+              className={
+                pathname === '/contactus' ? 'text-primaryColor font-bold' : ''
+              }
+            >
+              Contact us
+            </Link>
+          </li>
         </ul>
       </div>
     </>
