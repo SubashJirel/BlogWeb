@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const loggedIn = false;
+  const loggedIn = true;
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleShowDropdown = () => setShowDropdown((prev) => true);
