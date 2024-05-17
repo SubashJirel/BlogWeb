@@ -3,7 +3,7 @@
 import React from 'react';
 import Input from './Input';
 import Link from 'next/link';
-
+import Button from './Button';
 const ContactUsForm = () => {
   return (
     <section className="container">
@@ -12,7 +12,7 @@ const ContactUsForm = () => {
 
         <Input label="Name" type="text" name="name" />
         <Input label="Email" type="text" name="email" />
-        <button>Get in touch</button>
+        <Button label="Contact us" />
       </form>
     </section>
   );
